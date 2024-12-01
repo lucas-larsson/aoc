@@ -1,7 +1,9 @@
-import numpy as np
 from collections import Counter
 
-def part_one( column_one, column_two) -> int:
+import numpy as np
+
+
+def part_one(column_one, column_two) -> int:
     first_array_sorted = np.sort(column_one)
     second_array_sorted = np.sort(column_two)
 
@@ -11,9 +13,7 @@ def part_one( column_one, column_two) -> int:
 
     return total_difference
 
-
-def part_two( column_one, column_two) -> int:
-
+def part_two(column_one, column_two) -> int:
     count_map = Counter(column_two)
 
     multiplied_results = {num: num * count_map.get(num, 0) for num in column_one}
@@ -32,7 +32,6 @@ def read_input(file_path: str) -> np.array:
 
         return first_column, second_column
 
-
 def day_one():
     file_name = "../input/day_01.txt"
     first_column, second_column = read_input(file_name)
@@ -46,15 +45,6 @@ def day_one():
     print(part_one_solution)
     print(part_two_solution)
 
+
 if __name__ == "__main__":
     day_one()
-
-
-
-
-
-
-
-
-
-
