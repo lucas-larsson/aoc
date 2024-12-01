@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/2022/rust/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/2022/rust/target" />
     </content>
-    <orderEntry type="jdk" jdkName="invenio" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="aoc" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
